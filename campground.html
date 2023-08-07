@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campgrounds</title>
+    <link rel="stylesheet" href="campground.css">
+    <link rel="stylesheet" href="campground-desktop.css" media="(min-width: 600px)">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-header">
+        <img src="Assets/Logo.svg" alt="logo">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="sign-in.html">Login</a>
+                <a href="sign-up.html">Create an account</a>
+            </nav>
+        <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer" onclick="abrir()">
+        <section id="lugar">
+            <menu id="itens">
+                <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer2" onclick="fechar()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign-in.html">Login</a></li>
+                    <li><a href="sign-up.html">Create an account</a></li>
+                </ul>
+            </menu>
+        </section>
+    </div>
+    <main>
+        <section class="welcome-yelpcamp">
+            <div class="welcome-container">
+                <h1>Welcome to YelpCamp!</h1>
+                <p>View our hand-picked campgrounds from all over the world, or add your own.</p>
+                <div class="container-search">
+                    <input type="text" placeholder="Search for camps">
+                    <button>Search</button>
+                </div>
+                <a href="new-campground.html">Or add your own campground</a>
+            </div>
+        </section>
+        <section class="container-camp">
+            <div class="card">
+                <img src="Assets/Camp Images/Compressed Images/Mount Ulap.jpg" alt="">
+                <h2>Mount Ulap</h2>
+                <p>One of the most famous hikes in Benguet is Mt Ulap in ltogon.</p>
+                <a href="individual-campground.html">View Campground</a>
+            </div>
+            <div class="card">
+                <img src="Assets/Camp Images/Compressed Images/Calaguas Island.jpg" alt="">
+                <h2>Calaguas Islands</h2>
+                <p>A paradise of islands that can rival the white sand beauty of Boracay.</p>
+                <a href="campground-calaguas.html">View Campground</a>
+            </div>
+            <div class="card">
+                <img src="Assets/Camp Images/Compressed Images/Onay Beach.jpg" alt="">
+                <h2>Onay Beach</h2>
+                <p>This is o ne of the best beach camping sites, beautiful and pristene.</p>
+                <a href="campground-playas.html">View Campground</a>
+            </div>
+            <div class="card">
+                <img src="Assets/Camp Images/Compressed Images/Seven Sisters Waterfall.jpg" alt="">
+                <h2>Seven Sisters Waterfall</h2>
+                <p>The Seven Sisters is the 39th tallest waterfall in Norway.</p>
+                <a href="campground-cascadas.html">View Campground</a>
+            </div>
+            <div class="card">
+                <img src="Assets/Camp Images/Compressed Images/Latik Riverside.jpg" alt="">
+                <h2>Latik Riverside</h2>
+                <p>Philippines is one of the most dazzling countries in all of Asia.</p>
+                <a href="campground-latik.html">View Campground</a>
+            </div>
+            <div class="card">
+                <img src="Assets/Camp Images/Compressed Images/Buloy Springs.jpg" alt="">
+                <h2>Buloy Springs</h2>
+                <p>This is one of the best beach camping sites, beautiful and pristine.</p>
+                <a href="campground-buloy.html">View Campground</a>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="Assets/Logo.svg" alt="">
+    </footer>
+    <script>
+        function abrir() {
+            if (lugar.style.display == 'block') {
+                lugar.style.display = 'none'
+                menu.style.display = 'none'
+            } else {
+                lugar.style.display = 'block'
+                menu.style.display = 'none'
+            }
+        }
+        function fechar() {
+            if (lugar.style.display == 'none') {
+                lugar.style.display = 'block'
+                menu.style.display = 'block'
+            } else {
+                lugar.style.display = 'none'
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

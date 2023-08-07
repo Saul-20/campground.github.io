@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campgrounds</title>
+    <link rel="stylesheet" href="individual-campground.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-header">
+        <img src="Assets/Logo.svg" alt="logo">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="sign-in.html">Login</a>
+                <a href="sign-up.html">Create an account</a>
+            </nav>
+        <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer" onclick="abrir()">
+        <section id="lugar">
+            <menu id="itens">
+                <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer2" onclick="fechar()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign-in.html">Login</a></li>
+                    <li><a href="sign-up.html">Create an account</a></li>
+                </ul>
+            </menu>
+        </section>
+    </div>
+    <main>
+        <section class="information">
+            <img src="Assets/Camp Images/Compressed Images/Calaguas Island.jpg" alt="Mount Ulap">
+            <div class="name-price">
+                <h2>Calaguas Islas</h2>
+                <p>$110.99 / night</p>
+            </div>
+            <p>A paradise of islands that can rival the white sand beauty of Boracay. A paradise of islands that can rival the white sand beauty of Boracay. A paradise of islands that can rival the white sand beauty of Boracay.</p> <br>
+            <p style="font-style: italic;">Submitted by Andrew Mike</p>
+        </section>
+        <section class="comment">
+            <div class="card">
+                <div class="name-price">
+                    <h2>Adam Jones</h2>
+                    <p>13h ago</p>
+                </div>
+                <p>Honestly one of thne best experiences ever, took us a while to figure out how to get there but it was amazaing!</p>
+            </div>
+            <div class="card">
+                <div class="name-price">
+                    <h2>Isaac Dylan</h2>
+                    <p>1 day ago</p>
+                </div>
+                <p>Traveling changes you as a person, you again mire perspective, this is the perfect spot to do that.</p>
+            </div>
+            <div class="card">
+                <div class="name-price">
+                    <h2>Hudson Luca</h2>
+                    <p>3 days ago</p>
+                </div>
+                <p>Definitely recommend going there, not too far and not a lot of people to ruin the experience.</p>
+            </div>
+            <div class="btn">
+                <a href="new-comment.html"><img src="Assets/Chat Bubble.svg" alt="">Leave a Review</a>
+            </div>
+        </section>
+        <section class="map">
+            <div class="container-map">
+                <img src="Assets/Map.png" alt="">
+            </div>
+        </section>
+    </main>
+    <footer>
+        <img src="Assets/Logo.svg" alt="">
+    </footer>
+    <script>
+        function abrir() {
+            if (lugar.style.display == 'block') {
+                lugar.style.display = 'none'
+                menu.style.display = 'none'
+            } else {
+                lugar.style.display = 'block'
+                menu.style.display = 'none'
+            }
+        }
+        function fechar() {
+            if (lugar.style.display == 'none') {
+                lugar.style.display = 'block'
+                menu.style.display = 'block'
+            } else {
+                lugar.style.display = 'none'
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>

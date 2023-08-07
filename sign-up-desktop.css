@@ -1,0 +1,34 @@
+header nav{
+    justify-content: space-around;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: repeat(3, 180px);
+    grid-template-areas: 
+    "title comment"
+    "form comment"
+    "form comment";
+    gap: 10px;
+}
+
+.title-signup{
+    align-self: center;
+    grid-area: title;
+}
+
+.formulario{
+    grid-area: form;
+}
+
+.comment{
+    grid-area: comment;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+}
+
+.container-testimonial{
+    padding: 0 100px;
+}

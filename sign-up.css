@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Archivo', sans-serif;
+}
+
+body{
+    background-color: #f9f6f1;
+}
+
+header{
+    width: 90%;
+    margin: 0 auto;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+}
+
+header nav a{
+    color: #857676;
+    text-decoration: none;
+    font-size: 1.3rem;
+    font-weight: bold;
+}
+
+header nav a:hover{
+    color: #f03434;
+}
+
+main{
+    width: 90%;
+    margin: 0 auto;
+}
+
+.title-signup h2{
+    font-size: 3rem;
+    max-width: 582px;
+}
+
+.formulario{
+    max-width: 600px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 24px 0;
+}
+
+.formulario label{
+    font-size: 1.4rem;
+    color: #857676;
+}
+
+.formulario input{
+    width: 100%;
+    height: 40px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-indent: 10px;
+    background-color: #e4e4e4;
+}
+
+.formulario button{
+    width: 100%;
+    height: 50px;
+    font-weight: bold;
+    background-color: black;
+    color: white;
+    border: none;
+    border-radius: 8px;
+}
+
+.formulario button:hover{
+    background-color: #f03434;
+}
+
+.formulario p{
+    color: #857676;
+    font-size: 1.4rem;
+}
+
+.formulario p a{
+    color: #00ccff;
+    font-weight: bold;
+}
+
+.comment{
+    width: 100%;
+    max-width: 600px;
+    background-color: papayawhip;
+    padding: 24px;
+    margin-bottom: 24px;
+    border-radius: 12px;
+}
+
+.comment .testimonial{
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+.username-comment{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.username-comment p{
+    font-size: 1.4rem;
+}
+
+

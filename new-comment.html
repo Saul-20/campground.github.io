@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add New Comment</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campgrounds</title>
+    <link rel="stylesheet" href="new-comment.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@100;300;500;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="nav-header">
+        <img src="Assets/Logo.svg" alt="logo">
+            <nav class="nav">
+                <a href="index.html">Home</a>
+                <a href="sign-in.html">Login</a>
+                <a href="sign-up.html">Create an account</a>
+            </nav>
+        <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer" onclick="abrir()">
+        <section id="lugar">
+            <menu id="itens">
+                <img src="Assets/Hamburger Menu.svg" alt="menu" class="burguer2" onclick="fechar()">
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign-in.html">Login</a></li>
+                    <li><a href="sign-up.html">Create an account</a></li>
+                </ul>
+            </menu>
+        </section>
+    </div>
+   <main>
+    <section class="container-comment">
+        <h2>Add New Comment</h2>
+        <form action="#">
+            <label for="name">Description</label>
+            <textarea name="name" id="name" cols="30" rows="10" placeholder="This was probably the best camp i' ve visited this past year, definitely recommend visiting any time soon."></textarea>
+            <button>Post Comment</button>
+        </form>
+       </section>
+   </main>
+    <footer>
+        <img src="Assets/Logo.svg" alt="">
+    </footer>
+    <script>
+        function abrir() {
+            if (lugar.style.display == 'block') {
+                lugar.style.display = 'none'
+                menu.style.display = 'none'
+            } else {
+                lugar.style.display = 'block'
+                menu.style.display = 'none'
+            }
+        }
+        function fechar() {
+            if (lugar.style.display == 'none') {
+                lugar.style.display = 'block'
+                menu.style.display = 'block'
+            } else {
+                lugar.style.display = 'none'
+                menu.style.display = 'block'
+            }
+        }
+    </script>
+</body>
+</html>
+</body>
+</html>

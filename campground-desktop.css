@@ -1,0 +1,74 @@
+.nav{
+    display: flex;
+}
+
+.nav a{ 
+    display: block;
+    color: black;
+    font-size: 1.4rem;
+    font-weight: bold;
+}
+
+.nav a:nth-child(3){
+    background-color: black;
+    color: white;
+    font-weight: 700;
+    border-radius: 8px;
+}
+
+.nav a:nth-child(3):hover{
+    background-color: #f03434;
+}
+
+.burguer{
+    display: none;
+}
+
+.welcome-yelpcamp{
+    display: grid;
+    grid-template-columns: 490px auto;
+}
+
+.container-search{
+    display: grid;
+    grid-template-columns: 66% 34%;
+    gap: 12px;
+}
+
+.container-search input{
+    width: 100%;
+}
+
+.container-search button{
+    width: 100%;
+}
+
+.welcome-container{
+    width: 100%;
+}
+
+.welcome-container h1{
+    font-size: 5rem;
+}
+
+.welcome-container p{
+    font-size: 2rem;
+}
+
+.container-camp{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 24px;
+    justify-content: center;
+}
+
+.card{
+    width: 100%;
+    margin: 0;
+}
+
+.card p{
+    font-size: 1.7rem;
+}

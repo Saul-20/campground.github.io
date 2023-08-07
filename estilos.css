@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Archivo', sans-serif;
+}
+
+body{
+    background-color: #f9f6f1;
+}
+
+header{
+    padding: 30px 15px;
+}
+
+.header-desktop{
+    display: none;
+}
+
+.hero-container{
+    width: 100%;
+    height: 300px;
+    background-image: url("Assets/Hero Image (Tablet and Mobile).jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.section-informativa{
+    width: 90%;
+    margin: 24px auto;
+}
+
+.section-informativa h1{
+    font-size: 3rem;
+    font-weight: 800;
+    padding-bottom: 12px;
+}
+
+.section-informativa p{
+    color: #857676;
+    font-size: 1.8rem;
+}
+
+.section-informativa ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.section-informativa ul li{
+    font-size: 1.7rem;
+    color: #857676;
+}
+
+.section-informativa ul li img{
+    width: 30px;
+    padding-right: 12px;
+}
+
+.section-informativa .btn-camp{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 1.8rem;
+    font-weight: bold;
+    padding: 16px;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.section-informativa .btn-camp:hover{
+    background-color: #f03434;
+}
+
+
+.partnered{
+    width: 90%;
+    padding: 25px 0;
+}
+
+.partnered p{
+    font-size: 1.5rem;
+    color: #857676;
+}
+
+.partnered figure{
+    width: 280px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 20px 0;
+    align-items: center;
+}
+
+.partnered figure img:nth-child(1){
+    width: 70px;
+}
+
+.partnered figure img:nth-child(2){
+    width: 80px;
+}
+
+.partnered figure img:nth-child(3){
+    width: 90px;
+}
